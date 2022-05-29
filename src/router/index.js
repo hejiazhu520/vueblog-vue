@@ -8,11 +8,12 @@ import Files from '../views/Files.vue'
 
 Vue.use(VueRouter)
 
-const routes = [
-    {
+const routes = [{
         path: '/',
         name: 'Index',
-        redirect: {name: "Blogs"}
+        redirect: {
+            name: 'Blogs'
+        }
     },
     {
         path: '/blogs',
@@ -59,5 +60,4 @@ const router = new VueRouter({
     base: process.env.BASE_URL,
     routes
 })
-
 export default router

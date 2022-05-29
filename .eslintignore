@@ -1,0 +1,8 @@
+/dist/
+vue.config.js
+babel.config.js
+proxy.config.js
+alias.config.js
+build
+node_modules
+public

@@ -7,12 +7,12 @@ import axios from 'axios'
 
 import mavonEditor from 'mavon-editor'
 
-import "element-ui/lib/theme-chalk/index.css"
+import 'element-ui/lib/theme-chalk/index.css'
 import 'mavon-editor/dist/css/index.css'
 
-import "./axios"
-import "./permission"
-import uploader from  'vue-simple-uploader'
+import './axios'
+import './permission'
+import uploader from 'vue-simple-uploader'
 
 Vue.use(Element)
 Vue.use(mavonEditor)
