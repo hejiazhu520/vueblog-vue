@@ -44,7 +44,7 @@ module.exports = {
 		'spaced-comment': 0,
 		camelcase: 0,
 		// eslint-plugin-filenames
-		'filenames/match-regex': [2, '^[a-z-]+$', true],
+		// 'filenames/match-regex': [2, '^[a-z-]+$', true],
 		'filenames/match-exported': [2, 'kebab'],
 		// 允许index.js作为重新导出
 		'filenames/no-index': 0,
