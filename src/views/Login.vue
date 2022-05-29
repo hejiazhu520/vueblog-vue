@@ -58,14 +58,14 @@ export default {
 			try {
 				const res = await loginAction(query)
 				console.error(res)
-				if (res && res.data && res.data.id) {
+				if (res && res.data && res.data.data && res.data.data.id) {
 					Message({
-						message: res.msg || '登录成功',
+						message: res.data.msg || '登录成功',
 						type: 'success',
 						duration
 					})
 					const jwt = res.headers['authorization']
-					const userInfo = res.data
+					const userInfo = res.data.data
 					this.$store.commit('SET_TOKEN', jwt)
 					this.$store.commit('SET_USERINFO', userInfo)
 					this.$router.push('/blogs')

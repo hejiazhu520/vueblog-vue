@@ -80,7 +80,7 @@ const http = {
 				method: 'GET'
 			})
 				.then(res => {
-					resolve(res.data)
+					resolve(res)
 					return res
 				})
 				.catch(error => {
@@ -97,7 +97,7 @@ const http = {
 				method: 'POST'
 			})
 				.then(res => {
-					resolve(res.data)
+					resolve(res)
 					return res
 				})
 				.catch(error => {
